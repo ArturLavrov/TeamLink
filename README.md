@@ -7,6 +7,9 @@
 
 ## About
 
+The following application is an example of mudular monolith architecture implementation.
+
+
 
 ## Starting the application
 
@@ -26,18 +29,13 @@ dotnet run
 ## Solution structure
 
 ### Bootstrapper
-
+Bootstrapper - is a component that responsible for hosting module and it's implementation.
 
 ### Modules
 
 **Autonomous modules** with the different set of responsibilities, highly decoupled from each other - there's no reference between the modules at all (such as shared projects for the common data contracts), and the synchronous communication & asynchronous integration (via events) is based on **local contracts** approach.
 
-
-
 Each module contains its own HTTP requests definitions file (`.rest`) using [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extension.
-
-### Saga
-
 
 ### Shared
 
