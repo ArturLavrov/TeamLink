@@ -26,10 +26,10 @@ namespace TeamLink.Bootstrapper
 
         private List<Assembly> GetAssemblies()
         {
+            var currentDirectoryPath = Dirctory.GetCurrentDirectory();
+            
             return new List<Assembly>(2)
-            {
-                var currentDirectoryPath = Dirctory.GetCurrentDirectory();
-                
+            {    
                 Assembly.LoadFrom($"{curentDirectoryPath}/TeamLink.Delivery.dll"),
                 Assembly.LoadFrom($"{curentDirectoryPath}/TeamLink.Sales.dll"),
             };
