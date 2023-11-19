@@ -28,8 +28,10 @@ namespace TeamLink.Bootstrapper
         {
             return new List<Assembly>(2)
             {
-                Assembly.LoadFrom("/Users/artur/Projects/TeamLink/TeamLink.Delivery/bin/Debug/net6.0/TeamLink.Delivery.dll"),
-                Assembly.LoadFrom("/Users/artur/Projects/TeamLink/TeamLink.Sales/bin/Debug/net6.0/TeamLink.Sales.dll"),
+                var currentDirectoryPath = Dirctory.GetCurrentDirectory();
+                
+                Assembly.LoadFrom($"{curentDirectoryPath}/TeamLink.Delivery.dll"),
+                Assembly.LoadFrom($"{curentDirectoryPath}/TeamLink.Sales.dll"),
             };
         }
     }
