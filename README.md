@@ -7,22 +7,15 @@
 
 ## About
 
-The following application is an example of mudular monolith architecture implementation.
-
+The following application is an example of mudular monolith(or vertical slice) architecture implementation.
 
 
 ## Starting the application
 
-Start the infrastructure (only [PostgreSQL](https://www.postgresql.org)) using [Docker](https://docs.docker.com/get-docker/):
-
-```
-docker-compose up -d
-```
-
 Start API located under Bootstrapper project:
 
 ```
-cd src/Bootstrapper/Inflow.Bootstrapper
+cd src/TeamLink.Bootstrapper
 dotnet run
 ```
 
