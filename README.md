@@ -1,7 +1,7 @@
 # TeamLink
 
 
-![ModularMonolith drawio (1)](https://github.com/ArturLavrov/TeamLink/assets/10619880/ceb8dc87-8d4d-4d55-b1cc-0b7f392ed90c)
+![ModularMonolith drawio (1)](https://github.com/ArturLavrov/TeamLink/blob/master/docs/ModularMonolith.drawio%20(2).png)
 
 
 
